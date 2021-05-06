@@ -1,0 +1,25 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fullpage}
+\usepackage{tikz-uml}
+\sloppy
+\hyphenpenalty 10000000
+\begin{document}
+\maketitle
+\section{Class Diagram}
+\begin{center}
+\begin{tikzpicture}
+\begin{umlpackage}[x = 0, y = 0]{Rectangulo}
+\umlclass{Rectangulo}{
+Public:\\
+TipoRectangulo : enum\\count : int\\PI : float\\Cuenta : int\\
+Private:\\
+base:int\\altura:int\\
+}{\\
+Rectangulo::Rectangulo () \\Rectangulo::Rectangulo (int b, int a) \\	TR= (b!=a? NOCUADRADO : CUADRADO)\\void Rectangulo::ImprimeContador()\\	switch (TR) \\void Rectangulo::dimensiones(int a, int b) \\		Rectangulo ()\\		Rectangulo (int b, int a)\\		TipoRectangulo getTipoRectangulo () \\		void ImprimeContador()\\		void dimensiones(int a, int b)\\		int area () \\}
+\end{umlpackage}
+\end{tikzpicture}
+\end{center}
+\end{document}
